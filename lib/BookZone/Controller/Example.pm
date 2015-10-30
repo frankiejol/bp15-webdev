@@ -7,9 +7,10 @@ sub welcome {
   $self->render(data => 
       _header().
       _navigation().
-      '<div class="container"><div class="jumbotron">'.
-      "<h1>Welcome !</h1>\n".
-      '</div></div>'.
+'<div class="container"><div class="jumbotron">
+<h1>Welcome !</h1>
+</div></div>
+'.
       _footer()
   );
 }
@@ -62,7 +63,7 @@ sub _navigation {
               </ul>
             </li>
             <li><a href="/cart.html">Cart</a></li>
-            <li><a href="/about.html">Login</a></li>
+            <li><a href="/login.html">Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
     </div>
