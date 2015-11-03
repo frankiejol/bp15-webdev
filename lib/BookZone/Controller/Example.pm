@@ -9,7 +9,7 @@ sub welcome {
 sub buy {
     my $self = shift;
     my ($category) = $self->req->url->to_abs->path =~ m{/buy/(.*)};
-    $self->render(msg => $category, template => 'bootstrap');
+    $self->render(msg => $category, template => 'buy');
 }
 
 sub cart {
