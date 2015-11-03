@@ -14,10 +14,10 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buy <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/books">Books</a></li>
-                <li><a href="/comics">Comic Books</a></li>
-                <li><a href="/magazines">Magazines</a></li>
-                <li><a href="/jewelry">Jewelry</a></li>
+                <li><a href="/buy/books">Books</a></li>
+                <li><a href="/buy/comics">Comic Books</a></li>
+                <li><a href="/buy/magazines">Magazines</a></li>
+                <li><a href="/buy/jewelry">Jewelry</a></li>
               </ul>
             </li>
             <li><a href="/cart.html">Cart</a></li>

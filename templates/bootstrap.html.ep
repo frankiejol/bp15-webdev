@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+%= include 'header'
+<body role="document">
+    %= include 'navigation'
+    <div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+        <h2><%= $msg %></h2>
+    </div>
+    </div>
+    %= include 'scripts'
+</body>
+</html>

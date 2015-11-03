@@ -13,6 +13,11 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('example#welcome');
+
+  $r->get('/cart.html')->to('example#cart');
+  $r->get('/login.html')->to('example#login');
+
+  $r->get('/buy/*')->to('example#buy');
 }
 
 1;
