@@ -22,16 +22,17 @@ sub categories {
     $self->render(json => [
             {id_category => 1 , category => 'Mistery '},
             {id_category => 2 , category => 'Horror' },
-            {id_category => 2 , category => 'Cooking' },
+            {id_category => 3 , category => 'Cooking' },
+            {id_category => 4 , category => 'Classic' },
     ]);
 }
 
 sub articles_list {
     my $self = shift;
     $self->render(json => [
-            {id_article => 1 , article => 'Foo'},
-            {id_article => 2 , article => 'Bar' },
-            {id_article => 3 , article => 'Meh' },
+            {id_article => 1 , article => 'Moby Dick'},
+            {id_article => 2 , article => 'Les Miserables' },
+            {id_article => 3 , article => 'Oliver Twist' },
     ]);
 }
 
