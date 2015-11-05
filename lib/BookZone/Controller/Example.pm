@@ -20,11 +20,31 @@ sub cart {
 sub categories {
     my $self = shift;
     $self->render(json => [
-            {id_category => 1 , category => 'Mistery' },
+            {id_category => 1 , category => 'Mistery '},
             {id_category => 2 , category => 'Horror' },
             {id_category => 2 , category => 'Cooking' },
     ]);
 }
+
+sub articles_list {
+    my $self = shift;
+    $self->render(json => [
+            {id_article => 1 , article => 'Foo'},
+            {id_article => 2 , article => 'Bar' },
+            {id_article => 3 , article => 'Meh' },
+    ]);
+}
+
+sub article {
+    my $self = shift;
+    $self->render(json => 
+            {title => 'Moby Dick',
+                author => 'Charles Dickens',
+                price => 34
+            }
+        );
+    }
+
 
 sub login {
     my $self = shift;

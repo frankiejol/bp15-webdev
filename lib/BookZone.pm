@@ -20,6 +20,8 @@ sub startup {
   $r->get('/categories.json')->to('example#categories');
 
   $r->get('/buy/*')->to('example#buy');
+  $r->get('/articles_list/*.json')->to('example#articles_list');
+  $r->get('/article/*.json')->to('example#article');
 }
 
 1;

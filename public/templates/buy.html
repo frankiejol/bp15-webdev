@@ -1,14 +1,31 @@
-<h1>Buy '{{section}}'</h1>
+<h1>Buy</h1>
 
-<form name="buyForm" ng-controller="buyCtrl"
-    ng-submit="buyForm.$valid">
+<form name="buyForm" method="post" action="#"
+    ng-controller="buyCtrl"
+    novalidate
+    >
 
     <label for="id_category">Category</label>
     <select name ="id_category"
         ng-model="id_category"
         ng-options="item.id_category as item.category for item in categories"
         ng-change="loadArticles()"
-        required
     >
+    </select>
     
+    <div ng-show="show_articles_list">
+        <label for "id_article">Article</label>
+        <select name="id_article"
+            ng-model="id_article"
+            ng-options="item.id_article as item.article for item in articles"
+            ng-change="showArticle()"
+        >
+        </select>
+    </div>
+
+    <div ng-show="show_article">
+        <b>title: </b>{{article.title}}<br/>
+        <b>Author: </b>{{article.author}}</br/>
+        <b>Price: </b>{{article.price}} €<br/>
+    </div>
 </form>
