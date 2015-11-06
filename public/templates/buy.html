@@ -1,6 +1,7 @@
 <h1>Buy '{{section}}'</h1>
 
 <form name="buyForm" ng-controller="buyCtrl"
+    ng-init='init("a")'
     ng-submit="buyForm.$valid">
 
     <label for="id_category">Category</label>
