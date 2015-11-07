@@ -19,6 +19,7 @@ sub cart {
 
 sub categories {
     my $self = shift;
+    my ($section) = $self->req->url->to_abs->path =~ m{/categories/(.*).json};
     $self->render(json => [
             {id_category => 1 , category => 'Mistery '},
             {id_category => 2 , category => 'Horror' },

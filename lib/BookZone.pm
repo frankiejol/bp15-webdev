@@ -17,7 +17,7 @@ sub startup {
   $r->get('/cart.html')->to('example#cart');
   $r->get('/login.html')->to('example#login');
 
-  $r->get('/categories.json')->to('example#categories');
+  $r->get('/categories/*.json')->to('example#categories');
 
   $r->get('/buy/*')->to('example#buy');
   $r->get('/articles_list/*.json')->to('example#articles_list');
