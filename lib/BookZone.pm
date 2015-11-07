@@ -18,6 +18,8 @@ sub startup {
   $r->get('/login.html')->to('main#login');
 
   $r->get('/buy/*')->to('main#buy');
+  $r->get('/categories.json')->to('main#categories');
+
 }
 
 1;

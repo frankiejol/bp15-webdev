@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="bookzone.App">
+%= include 'header'
+<body role="document">
+    %= include 'navigation'
+    <div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+        <div ng-controller="buyCtrl" ng-init="init('<%= $section %>')">
+        <sol-show-buy></sol-show-buy>
+        </div>
+    </div>
+    </div>
+    %= include 'scripts'
+</body>
+</html>

@@ -1,0 +1,15 @@
+<h1>Buy '{{section}}'</h1>
+
+<form name="buyForm" ng-controller="buyCtrl"
+    ng-init='init("a")'
+    ng-submit="buyForm.$valid">
+
+    <label for="id_category">Category</label>
+    <select name ="id_category"
+        ng-model="id_category"
+        ng-options="item.id_category as item.category for item in categories"
+        ng-change="loadArticles()"
+        required
+    >
+    
+</form>
