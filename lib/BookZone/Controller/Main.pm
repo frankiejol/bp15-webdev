@@ -1,4 +1,4 @@
-package BookZone::Controller::Example;
+package BookZone::Controller::Main;
 use Mojo::Base 'Mojolicious::Controller';
 
 sub welcome {
